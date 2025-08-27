@@ -4,7 +4,6 @@
 		<Items>
 			<Item Name="Caption" Value="Tipe bodi mobil" />
 			<Item Name="Columns.UsrCode.Caption" Value="Kode" />
-			<Item Name="EventsProcessSchema.Caption" Value="Objek dasar" />
 		</Items>
 	</Group>
 </Resources>

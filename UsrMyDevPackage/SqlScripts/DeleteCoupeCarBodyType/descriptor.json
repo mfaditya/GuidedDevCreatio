@@ -1,0 +1,11 @@
+﻿{
+  "SqlScript": {
+    "UId": "1c3f61cb-05d8-048e-822b-f44ef2042bb4",
+    "Name": "DeleteCoupeCarBodyType",
+    "DBEngineType": 0,
+    "InstallType": 0,
+    "ModifiedOnUtc": "\/Date(1756274381000)\/",
+    "BackwardCompatibilityConfirmed": false,
+    "DependsOn": []
+  }
+}
