@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "3353904a-5ec6-423d-9bd6-939140fd1554",
+    "Name": "UsrRealty_Detail",
+    "ModifiedOnUtc": "\/Date(1756351277000)\/",
+    "Parent": {
+      "UId": "01eb38ee-668a-42f0-999d-c2534f979089",
+      "Name": "BaseGridDetailV2"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Realty detail",
+    "DependsOn": []
+  }
+}
