@@ -20,6 +20,8 @@
 			<Item Name="LocalizableStrings.PushMeButton_caption.Value" Value="Push me!" />
 			<Item Name="LocalizableStrings.RunAvgPriceMenuItem_caption.Value" Value="Run average price calculation process" />
 			<Item Name="LocalizableStrings.RunMaxPriceWebServiceMenuItem_caption.Value" Value="Run web service to get max price" />
+			<Item Name="LocalizableStrings.RunMinPriceWebServiceMenuItem_caption.Value" Value="Run web service to get min price" />
+			<Item Name="LocalizableStrings.VisitRecordsButton_caption.Value" Value="Push Visit Records" />
 		</Items>
 	</Group>
 </Resources>

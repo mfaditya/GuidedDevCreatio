@@ -29,6 +29,27 @@ namespace Terrasoft.Configuration
             decimal result = select.ExecuteScalar<decimal>();
             return result;
         }
+
+		[OperationContract]
+        [WebInvoke(Method = "POST", BodyStyle = WebMessageBodyStyle.Wrapped,
+            RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
+		public decimal GetMinPriceByTypeId(string realtyTypeId, string realtyOfferTypeId) 
+		{
+		    if (!Guid.TryParse(realtyTypeId, out Guid typeGuid) || 
+		        !Guid.TryParse(realtyOfferTypeId, out Guid offerGuid))
+		    {
+		        return -1;
+		    }
+
+			Select select = new Select(UserConnection)
+	        .Column(Func.Min("UsrPrice"))
+	        .From("UsrRealty")
+	        .Where("UsrTypeId").IsEqual(Column.Parameter(typeGuid))
+	        .And("UsrOfferTypeId").IsEqual(Column.Parameter(offerGuid)) as Select;
+
+		    decimal result = select.ExecuteScalar<decimal>();
+            return result;
+		}
         [OperationContract]
         [WebInvoke(Method = "GET", BodyStyle = WebMessageBodyStyle.Wrapped,
             RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
